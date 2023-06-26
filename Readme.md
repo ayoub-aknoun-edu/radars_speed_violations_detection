@@ -195,7 +195,7 @@ $$ SOAP (SOAP UI) $$
 
 > Get all owners :
 
-![Get all owners](ressources/soapUI_all_prop.png)
+![Get all owners](ressources/soapui_all_prop.png)
 
 $$ GraphQL (GraphiQL) $$
 
