@@ -171,11 +171,11 @@ $$ REST (swagger-ui)$$
 
 > Get all vehicules :
 
-![Get all vehicules](ressources/swagger_all_vehic.png)
+![Get all vehicules](ressources/soapui_all_vehic.png)
 
 > Get all owners :
 
-![Get all owners](ressources/swagger_all_prop.png)
+![Get all owners](ressources/soapUi_all_prop.png)
 
 $$ SOAP (SOAP UI) $$
 
@@ -199,15 +199,15 @@ $$ GraphQL (GraphiQL) $$
 
 > Get all vehicules :
 
-![Get all vehicules](ressources/graphiQL_all_vehic.png)
+![Get all vehicules](ressources/graphiql_all_vehic.png)
 
 > Get all owners :
 
-![Get all owners](ressources/graphiQL_all_prop.png)
+![Get all owners](ressources/graphiql_all_prop.png)
 
 > Add vehicule :
 
-![Add vehicule](ressources/graphiQL_add_vehic.png)
+![Add vehicule](ressources/graphiql_add_vehic.png)
 
 $$ gRPC (BloomRPC) $$
 
