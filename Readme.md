@@ -189,7 +189,7 @@ $$ SOAP (SOAP UI) $$
 
 > Get all vehicules :
 
-![Get all vehicules](ressources/soapUI_all_vehic.png)
+![Get all vehicules](ressources/soapui_all_vehic.png)
 
 > Get all owners :
 
