@@ -196,6 +196,7 @@ $$ SOAP (SOAP UI) $$
 > Get all owners :
 
 ![Get all owners](ressources/soapUI_all_prop.png)
+
 $$ GraphQL (GraphiQL) $$
 
 > Get all vehicules :
