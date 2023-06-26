@@ -171,11 +171,15 @@ $$ REST (swagger-ui)$$
 
 > Get all vehicules :
 
-![Get all vehicules](ressources/soapui_all_vehic.png)
+![Get all vehicules](ressources/swagger_all_vehic.png)
 
 > Get all owners :
 
-![Get all owners](ressources/soapUi_all_prop.png)
+![Get all owners](ressources/swagger_all_prop.png)
+
+> Get all radars:
+
+![Get all radars](ressources/swagger_all_radars.png)
 
 $$ SOAP (SOAP UI) $$
 
