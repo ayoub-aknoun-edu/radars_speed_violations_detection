@@ -1,0 +1,37 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+option java_package="me.project.immatriculationservice.stubs";
+
+message ProprietaireResponse{
+    string id = 1;
+    string nom = 2;
+    string dateNaissance = 3;
+    string email = 4;
+}
+message PropreitaireRequest{
+    string id = 1;
+}
+
+message VehiculeResponse{
+    string id = 1;
+    string marque = 2;
+    string modele = 3;
+    string matricule = 4;
+    int32 puissance = 5;
+    string proprietaireId = 6;
+    ProprietaireResponse proprietaire = 7;
+}
+
+message VehiculeRequest{
+    string matricule = 1;
+}
+
+service ImmatriculationService {
+
+  rpc getProprietaire(PropreitaireRequest) returns (ProprietaireResponse) {}
+  rpc getVehicule(VehiculeRequest) returns (VehiculeResponse) {}
+  rpc getVehicules(PropreitaireRequest) returns (stream VehiculeResponse) {}
+  rpc getProprietaires(google.protobuf.Empty) returns (stream ProprietaireResponse) {}
+}
+
+

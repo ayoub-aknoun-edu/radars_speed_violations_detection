@@ -1,0 +1,47 @@
+type Proprietaire {
+    id: Int,
+    name: String,
+    email: String,
+    dateNaissance: String
+}
+
+input ProprietaireDto {
+    name: String,
+    email: String,
+    dateNaissance: String
+}
+
+type Vehicule {
+    id: Int,
+    matricule: String,
+    modele: String,
+    marque: String,
+    puissanceFiscale: Int,
+    proprietaireID: Int,
+    proprietaire: Proprietaire
+}
+
+input VehiculeDto {
+    matricule: String,
+    modele: String,
+    marque: String,
+    puissanceFiscale: Int,
+    proprietaireID: Int
+}
+
+type Query {
+    getProprietaires: [Proprietaire],
+    getProprietaire(id: Int): Proprietaire,
+    getVehicules: [Vehicule],
+    getVehicule(id: Int): Vehicule
+}
+
+type Mutation {
+    createProprietaire(proprietaire: ProprietaireDto): Proprietaire,
+    updateProprietaire(id: ID, proprietaire: ProprietaireDto): Proprietaire,
+    deleteProprietaire(id: ID): Boolean,
+    createVehicule(vehicule: VehiculeDto): Vehicule,
+    updateVehicule(id: ID, vehicule: VehiculeDto): Vehicule,
+    deleteVehicule(id: ID): Boolean
+}
+

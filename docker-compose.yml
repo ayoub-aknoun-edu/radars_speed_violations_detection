@@ -1,0 +1,38 @@
+version: '3'
+services:
+  eureka-discovery:
+    container_name: eureka-discovery
+    build: ./eureka-discovery
+    ports:
+      - 8761:8761
+  gateway-service:
+    container_name: gateway-service
+    build: ./gateway-service
+    ports:
+      - 8888:8888
+    depends_on:
+      - eureka-discovery
+  immatriculation-service:
+    container_name: immatriculation-service
+    build: ./immatriculation-service
+    ports:
+      - 8081:8081
+      - 9090:9090
+    depends_on:
+      - eureka-discovery
+  infraction-service:
+    container_name: infraction-service
+    build: ./infraction-service
+    ports:
+      - 8082:8082
+    depends_on:
+      - eureka-discovery
+  radar-service:
+    container_name: radar-service
+    build: ./radar-service
+    ports:
+      - 8083:8083
+      - 9091:9091
+    depends_on:
+      - eureka-discovery
+

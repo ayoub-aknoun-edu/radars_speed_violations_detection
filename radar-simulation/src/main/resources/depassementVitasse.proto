@@ -1,0 +1,38 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+option java_package="me.grpc.stubs";
+
+
+
+message deppassementResponse{
+  string id = 1;
+  string date = 2;
+  string numeroRadar = 3;
+  string matriculeVehicule = 4;
+  string vitesseVehicule = 5;
+  string vitesseMaximaleRadar = 6;
+  string montantInfraction = 7;
+}
+
+message DeppassementRequest{
+  string VehiculeMatricule = 1;
+  string numeroRadar = 2;
+  string vitesseVehicule = 3;
+}
+
+message RadarResponse{
+  string numeroRadar = 1;
+  string vitesseMaximale = 2;
+  string longitude = 3;
+  string latitude = 4;
+}
+
+
+
+service DeppassementVitasseService {
+  rpc depasseVitsse(DeppassementRequest) returns (deppassementResponse);
+  rpc getRadars(google.protobuf.Empty) returns (stream RadarResponse);
+
+}
+
+
