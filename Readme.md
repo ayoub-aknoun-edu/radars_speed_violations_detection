@@ -29,6 +29,7 @@ The [radar simulator](/radar-simulation/) is a simple application that generate 
 - [Frontend Service](#frontend)
 - [Deployment](#deployment)
   - [Docker](#docker)
+- [Demo](#demo)
   
 
 
@@ -481,3 +482,11 @@ services:
 ```bash
 docker-compose up --build
 ```
+
+## Demo 
+
+
+
+
+https://github.com/ayoub-aknoun-edu/radars_speed_violations_detection/assets/81885138/254a210a-7a3b-4462-8be8-074d89b98422
+
