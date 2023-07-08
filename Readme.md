@@ -183,8 +183,6 @@ $$ REST (swagger-ui)$$
 
 $$ SOAP (SOAP UI) $$
 
-> wsdl :
-
 ![wsdl](ressources/immat_soap_wsdl.png)
 
 > available methods :
@@ -197,7 +195,7 @@ $$ SOAP (SOAP UI) $$
 
 > Get all owners :
 
-![Get all owners](ressources/soapUI_all_prop.png)
+![Get all owners](ressources/soapUi_all_prop.png)
 
 $$ GraphQL (GraphiQL) $$
 
